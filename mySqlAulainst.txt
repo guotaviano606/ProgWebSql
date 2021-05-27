@@ -1,0 +1,17 @@
+PATH MYSQL
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+C:\Users\renat
+
+[08:45] JANAINE CRISTIANE DE SOUZA ARANTES
+npm install --save sequelize
+
+[08:45] JANAINE CRISTIANE DE SOUZA ARANTES
+npm install --save mysql2
+
+node exemplo01 (executa)
+
+10:20
+npm install --save express-handlebars
+

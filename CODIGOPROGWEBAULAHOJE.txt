@@ -1,0 +1,148 @@
+CÓDIGOS AULA PROG WEB
+
+exemplo03_01.js
+
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('teste', 'root',
+'fatec123', {host: 'localhost', dialect: 'mysql'}
+);
+
+
+
+const Postagem = sequelize.define('postagens', {
+titulo : {
+type : Sequelize.STRING
+},
+conteudo: {
+type : Sequelize.TEXT
+}
+});
+
+
+
+Postagem.create({
+titulo: "Legião Urbana",
+conteudo: "O sol nasce pra todos, só não sabe quem não quer."
+})
+
+
+
+const Usuario = sequelize.define('usuarios', {
+nome : {
+type : Sequelize.STRING
+},
+sobrenome: {
+type : Sequelize.STRING
+},
+idade: {
+type : Sequelize.INTEGER
+},
+email: {
+type: Sequelize.STRING
+},
+});
+
+
+
+Usuario.create({
+nome: "Janaine",
+sobrenome: "Arantes",
+idade: 42,
+email: "prof.janaine@gmail.com"
+})
+
+_____________________
+
+exemplo03.js
+
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('teste', 'root',
+'fatec123', {host: 'localhost', dialect: 'mysql'}
+);
+
+
+
+const Postagem = sequelize.define('postagens', {
+titulo : {
+type : Sequelize.STRING
+},
+conteudo: {
+type : Sequelize.TEXT
+}
+});
+
+
+
+Postagem.sync({force: true});
+
+
+
+const Usuario = sequelize.define('usuarios', {
+nome : {
+type : Sequelize.STRING
+},
+sobrenome: {
+type : Sequelize.STRING
+},
+idade: {
+type : Sequelize.INTEGER
+},
+email: {
+type: Sequelize.STRING
+},
+});
+
+
+
+Usuario.sync({force: true});
+
+_____________
+
+const Sequelize = require('sequelize');
+const sequelize = new Sequelize('teste', 'root',
+'fatec123', {host: 'localhost', dialect: 'mysql'}
+);
+
+
+
+const Postagem = sequelize.define('postagens', {
+titulo : {
+type : Sequelize.STRING
+},
+conteudo: {
+type : Sequelize.TEXT
+}
+});
+
+
+
+Postagem.create({
+titulo: "Legião Urbana",
+conteudo: "O sol nasce pra todos, só não sabe quem não quer."
+})
+
+
+
+const Usuario = sequelize.define('usuarios', {
+nome : {
+type : Sequelize.STRING
+},
+sobrenome: {
+type : Sequelize.STRING
+},
+idade: {
+type : Sequelize.INTEGER
+},
+email: {
+type: Sequelize.STRING
+},
+});
+
+
+
+Usuario.create({
+nome: "Janaine",
+sobrenome: "Arantes",
+idade: 42,
+email: "prof.janaine@gmail.com"
+})
